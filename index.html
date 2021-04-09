@@ -27,7 +27,7 @@
           <ul>
             <li v-for="contact in contacts" class="user">
               <img class="user-logo" v-bind:src="contact.avatar">
-              {{ contact.name }}
+              <span class="user-name">{{ contact.name }}</span>
             </li>
           </ul>
         </div>

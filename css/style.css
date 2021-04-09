@@ -23,22 +23,28 @@
 }
 
 .user{
+  display: flex;
+
   width: 15vw;
-  content: "";
-  display: table;
-  clear: both;
+  height: 30px;
 
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 
-
+  line-height: 30px;
 }
 
 .user-logo {
+
   width: 25px;
   height: 25px;
 
   border-radius: 100%;
+}
+
+.user-name {
+  line-height: 30px;
+  vertical-align: middle;
 }
 /* ZONA MESSAGGI */
 .messages-row {
