@@ -87,7 +87,7 @@ function initVue() {
                 }
             ],
         },
-    ];
+    ]
     },
     methods: {
 
@@ -97,4 +97,4 @@ function initVue() {
   });
 }
 
-initVue();
+$(initVue);
