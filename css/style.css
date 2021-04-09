@@ -22,17 +22,21 @@
   float: left;
 }
 
-.user::after{
+.user{
+  width: 15vw;
   content: "";
   display: table;
   clear: both;
 
-  border: 1px solid black;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 
 .user-logo {
-  width: 50px;
+  width: 25px;
+  height: 25px;
 
+  border-radius: 100%;
 }
 /* ZONA MESSAGGI */
 .messages-row {
