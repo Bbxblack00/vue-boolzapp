@@ -16,9 +16,18 @@
       <!-- barra dei contatti di sinistra -->
       <div class="contacts-row">
 
-        zona contatti
+        <div class>
+          <ul>
+            <li v-for="contact in contacts" class="user">
+              <img v-bind:src="contact.avatar">
+              {{contact}}
+            </li>
+          </ul>
+        </div>
 
-      </div>
+        </div>
+
+
 
       <!-- barra dei messaggi di destra -->
       <div class="messages-row">
