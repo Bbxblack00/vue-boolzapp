@@ -72,7 +72,7 @@ function initVue() {
         },
         {
             name: 'Luisa',
-            avatar: 'img/UT_3.jpg',
+            avatar: 'img/UT_4.jpg',
             visible: true,
             messages: [
                 {
