@@ -12,8 +12,8 @@
 }
 /* ZONA CONTATTI */
 .contacts-row {
-  width: 15vw;
-  height: 90vh;
+  width: 25vw;
+  height: 100vh;
 
   border-right: 1px solid black;
 
@@ -22,10 +22,14 @@
   float: left;
 }
 
+.personal-info {
+  background-color: #00bfa5;
+}
+
 .user{
   display: flex;
 
-  width: 15vw;
+  width: 25vw;
   height: 30px;
 
   border-top: 1px solid lightgray;
@@ -48,7 +52,7 @@
 }
 /* ZONA MESSAGGI */
 .messages-row {
-  width: 85vw;
+  width: 75vw;
   height: 90vh;
 
   border-left: : 1px solid black;
