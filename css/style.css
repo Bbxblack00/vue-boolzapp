@@ -10,6 +10,10 @@
   width: 100vw;
   height: 90vh;
 }
+
+ul {
+  list-style: none;
+}
 /* ZONA CONTATTI */
 .contacts-row {
   width: 25vw;
@@ -63,6 +67,18 @@
   float: right;
 }
 
+.spk{
+  float: left;
+
+  content: "";
+  display: table;
+  clear: both;
+
+  max-width: 30vw;
+
+  border-radius: 10%;
+}
+/* ZONA INPUT TESTUALE */
 .und-container {
   height: 10vh;
   width: 75vw;

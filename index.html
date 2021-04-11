@@ -39,9 +39,13 @@
       <!-- barra dei messaggi di destra -->
       <div class="messages-row">
 
-        <div class="row">
-
-        </div>
+        <ul>
+          <li v-for="message in contacts[0][messages]" class="spk">
+            <h3>
+              {{ message.text }}
+            </h3>
+          </li>
+        </ul>
 
       </div>
 
