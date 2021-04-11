@@ -87,7 +87,10 @@ function initVue() {
                 }
             ],
         },
-    ]
+    ],
+
+    crrChat: [],
+
     },
     methods: {
 

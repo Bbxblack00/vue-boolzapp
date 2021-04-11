@@ -63,8 +63,33 @@
   float: right;
 }
 
-footer {
-  content: "";
-  clear: both;
-  display: table;
+.und-container {
+  height: 10vh;
+  width: 75vw;
+
+  float: right;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: darkgreen;
+}
+
+#msg {
+  height: 6vh;
+  width: 80%;
+
+  border-radius: 25px;
+  border: none;
+}
+
+#send {
+  background: darkgreen;
+
+  border: none;
+}
+
+#send img {
+  height: 6vh;
 }
