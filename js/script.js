@@ -88,11 +88,26 @@ function initVue() {
             ],
         },
     ],
-
-    crrChat: [],
+    myMsg: '',
+    myChat: []
 
     },
     methods: {
+
+      newMsg: function() {
+        if (this.myMsg.length > 0) {
+          var d = new Date();
+          var time = d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes();
+          let temp = {
+            date: time,
+            text: this.myMsg,
+            status: 'send'
+          };
+          this.myChat.push(temp);
+          this.myMsg = '';
+          console.log(this.myChat);
+        }
+      }
 
     }
 
