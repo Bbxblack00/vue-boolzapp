@@ -105,7 +105,6 @@ function initVue() {
           };
           this.myChat.push(temp);
           this.myMsg = '';
-          console.log(this.myChat);
         }
       }
 
