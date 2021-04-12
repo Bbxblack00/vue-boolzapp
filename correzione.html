@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Slider</title>
+        <!-- font awesame -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!-- bootstrap v4 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- vue -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <!-- jquery -->
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <!-- css -->
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="app" class="container">
+            <div class="left">
+                <div class="header-left">
+                    <div class="header-left-logo">
+                        <img src="img/avatar_io.jpg" alt="">
+                        <span>Guybrush Threepwood</span>
+                    </div>
+                    <div class="header-left-icons">
+                        <i class="fas fa-circle-notch"></i>
+                        <i class="fas fa-comment-alt"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="left-disclaimer">
+                    <div class="left-disclaimer-logo">
+                    <i class="fa fa-bell-slash" aria-hidden="true"></i>
+                    </div>
+                    <div class="left-disclaimer-text">
+                    <h3>Ricevi notifiche di nuovi messaggi</h3>
+                    <a href="#">Attiva notifiche desktop</a>
+                    </div>
+                </div>
+                <div class="left-searchbar">
+                    <label for="search" class="search-label">
+                        <i class="fa fa-search"></i>
+                    </label>
+                    <input type="text" class="left-searchbar-input" placeholder="Cerca o inizia una nuova chat">
+                </div>
+                <div class="contacts">
+                    <div
+                        v-for="(contact, index) in contacts"
+                        @click="contactClick(index)"
+                        class="contact"
+                        :class="index == activeIndex ? 'active' : ''"
+                        >
+                        <div class="contact-logo">
+                            <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="">
+                        </div>
+                        <div class="contact-info">
+                            <h3>
+                                <span class="contact-name">{{ contact.name }}</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="header-right">
+                    <div class="header-right-logo">
+                        <img :src="'img/avatar' + contacts[activeIndex].avatar + '.jpg'">
+                        <h3>{{ contacts[activeIndex].name }}</h3>
+                    </div>
+                    <div class="header-right-icons">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-paperclip"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div class="right-messages-container">
+                    <div class="right-messages">
+                        <div
+                            v-for="message in contacts[activeIndex].messages"
+                            class="message"
+                            :class="message.status">
+                            <span class="message-text">{{ message.text }}</span>
+                            <span class="message-time">{{ message.date }}</span>
+                            <i class="fa fa-chevron-down f-right message-option text-success"></i>
+                        </div>
+                        <!-- <div class="message sent">
+                            <span class="message-text">Testo messaggio out</span>
+                            <span class="message-time">1/1/1</span>
+                            <i class="fa fa-chevron-down f-right message-option text-success"></i>
+                        </div>
+                        <div class="message received">
+                            <span class="message-text">Testo messaggio in</span>
+                            <span class="message-time">1/1/1</span>
+                            <i class="fa fa-chevron-down f-right message-option text-success"></i>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="right-footer">
+                    <div class="right-footer-icon f-left">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <input type="text" class="new-message-inputs" placeholder="Scrivi un messaggio">
+                    <div class="right-footer-icon f-right">
+                        <i class="fa fa-microphone" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
