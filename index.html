@@ -28,7 +28,6 @@
             <li v-for="contact in contacts" class="user">
               <img class="user-logo" v-bind:src="contact.avatar">
               <span class="user-name">{{ contact.name }}</span>
-              :class="index == activeIndex ? 'active' : ''"
             </li>
           </ul>
         </div>
