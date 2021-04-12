@@ -24,8 +24,8 @@
 
         <div class="contacts-zone">
 
-            <ul v-for="(contact, index) in contacts" @click="contactClick(index)" :class="index == activeIndex ? 'active' : ''">
-              <li class="user">
+            <ul>
+              <li v-for="(contact, index) in contacts" @click="contactClick(index)" :class="index == activeIndex ? 'active' : ''" class="user">
                 <img class="user-logo" v-bind:src="contact.avatar">
                 <span class="user-name">{{ contact.name }}</span>
               </li>
@@ -35,7 +35,6 @@
           </div>
 
 
-        </div>
 
 
 
@@ -44,9 +43,7 @@
 
         <ul>
           <li v-for="message in contacts[0].messages" class="spk">
-            <h3>
-              {{ message.text }}
-            </h3>
+           {{ message.text }}
           </li>
         </ul>
 
@@ -64,5 +61,6 @@
 
     </div>
 
+  </div>
   </body>
 </html>

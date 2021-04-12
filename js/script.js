@@ -11,8 +11,8 @@ function initVue() {
           messages: [
             {
               date: '10/01/2020 15:30:55',
-              text: 'Hai portato a spasso il cane?'
-              ,status: 'sent'
+              text: 'Hai portato a spasso il cane?',
+              status: 'sent'
             },
             {
               date: '10/01/2020 15:50:00',
