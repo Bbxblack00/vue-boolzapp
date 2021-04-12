@@ -111,9 +111,7 @@ function initVue() {
       },
 
       slectUser: function(index) {
-
         this.activeIndex = index;
-
       }
 
     }
