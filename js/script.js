@@ -89,7 +89,8 @@ function initVue() {
         },
     ],
     myMsg: '',
-    myChat: []
+    myChat: [],
+    activeIndex: ''
 
     },
     methods: {
