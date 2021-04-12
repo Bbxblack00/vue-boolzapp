@@ -14,6 +14,10 @@
 ul {
   list-style: none;
 }
+
+.active {
+  background: lightgray;
+}
 /* ZONA CONTATTI */
 .contacts-row {
   width: 25vw;
@@ -85,7 +89,13 @@ ul {
 
   background-color: white;
 
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
+}
+
+.s-green {
+  background-color: green;
+
+  color: white;
 }
 /* ZONA INPUT TESTUALE */
 .und-container {

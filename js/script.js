@@ -90,7 +90,7 @@ function initVue() {
     ],
     myMsg: '',
     myChat: [],
-    activeIndex: '',
+    activeIndex: 0,
     index: 0
 
     },
@@ -108,6 +108,12 @@ function initVue() {
           this.myChat.push(temp);
           this.myMsg = '';
         }
+      },
+
+      slectUser: function(index) {
+
+        this.activeIndex = index;
+
       }
 
     }
