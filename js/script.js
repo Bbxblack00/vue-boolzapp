@@ -109,8 +109,6 @@ function initVue() {
       }
 
     }
-
-    // creare le funzioni
   });
 }
 
