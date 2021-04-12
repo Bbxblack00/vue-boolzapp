@@ -81,6 +81,11 @@ ul {
   max-width: 30vw;
 
   border-radius: 10%;
+  padding: 10px;
+
+  background-color: white;
+
+  margin-bottom: 25px; 
 }
 /* ZONA INPUT TESTUALE */
 .und-container {

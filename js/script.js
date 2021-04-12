@@ -90,7 +90,8 @@ function initVue() {
     ],
     myMsg: '',
     myChat: [],
-    activeIndex: ''
+    activeIndex: '',
+    index: 0
 
     },
     methods: {
