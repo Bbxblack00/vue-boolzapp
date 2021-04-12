@@ -90,12 +90,16 @@ ul {
   background-color: white;
 
   margin-bottom: 25px;
+  margin-left: 12px;
 }
 
 .s-green {
+  float: right;
+
   background-color: green;
 
   color: white;
+  margin-right: 12px;
 }
 /* ZONA INPUT TESTUALE */
 .und-container {
