@@ -115,6 +115,8 @@ function initVue() {
           const myNewMessage = this
           this.contacts[this.activeIndex].messages.push(temp);
           this.myMsg = '';
+
+          this.autoMsg();
         }
       },
 
@@ -122,9 +124,16 @@ function initVue() {
 
         const activeUser = this.activeIndex;
 
+        let d = new Date();
+        let time = d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes();
+
         setTimeout(() => {
 
-          const newMsg = this.getNewMsg('Ok', 'received');
+          const newMsg = {
+            date: time,
+            text: 'ok',
+            status: 'recived'
+          }
           this.contacts[activeIndex].messages.push(newMsg);
         }, 1000);
 
