@@ -59,7 +59,7 @@
 
       <!-- input dei messaggi dall'utente -->
       <div class="und-container">
-        <input id="msg" v-model="myMsg" type="text" name="messaggi" placeholder="Cosa vuoi scrivere?">
+        <input id="msg" v-model="myMsg" type="text" name="messaggi" placeholder="Cosa vuoi scrivere?" @keyup.enter="newMsg">
         <button id="send" type="button" name="send" @click="newMsg">
           <img src="img/right-arrow.png">
         </button>
