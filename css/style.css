@@ -6,9 +6,10 @@
   box-sizing: border-box;
 }
 
-.container {
+.my-container {
   width: 100vw;
   height: 90vh;
+
 }
 
 ul {
@@ -28,6 +29,12 @@ ul {
   background-color: #ffece6;
 
   float: left;
+}
+
+.searchbar-input {
+
+  border-radius: 10px;
+
 }
 
 .personal-info {
