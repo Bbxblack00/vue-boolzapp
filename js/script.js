@@ -91,15 +91,16 @@ function initVue() {
     myMsg: '',
     myChat: [],
     activeIndex: 0,
-    index: 0
+    index: 0,
+    searchText: ''
 
     },
-    // updated: {
-    //
-    //   var container = this.$el.querySelector('.messages-row');
-    //   container.scrollTop = container.scrollHeight;
-    //
-    // },
+    updated: {
+
+      var container = this.$el.querySelector('.messages-row');
+      container.scrollTop = container.scrollHeight;
+
+    },
     methods: {
 
       newMsg: function() {
