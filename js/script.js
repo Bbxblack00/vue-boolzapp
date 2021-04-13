@@ -110,7 +110,7 @@ function initVue() {
           let temp = {
             date: time,
             text: this.myMsg,
-            status: 'send'
+            status: 'sent'
           };
           const myNewMessage = this
           this.contacts[this.activeIndex].messages.push(temp);
@@ -132,9 +132,9 @@ function initVue() {
           const newMsg = {
             date: time,
             text: 'ok',
-            status: 'recived'
+            status: 'received'
           }
-          this.contacts[activeIndex].messages.push(newMsg);
+          this.contacts[this.activeIndex].messages.push(newMsg);
         }, 1000);
 
       },
