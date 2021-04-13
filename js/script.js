@@ -112,9 +112,22 @@ function initVue() {
             text: this.myMsg,
             status: 'send'
           };
-          this.myChat.push(temp);
+          const myNewMessage = this
+          this.contacts[this.activeIndex].messages.push(temp);
           this.myMsg = '';
         }
+      },
+
+      autoMsg: function() {
+
+        const activeUser = this.activeIndex;
+
+        setTimeout(() => {
+
+          const newMsg = this.getNewMsg('Ok', 'received');
+          this.contacts[activeIndex].messages.push(newMsg);
+        }, 1000);
+
       },
 
       slectUser: function(index) {
