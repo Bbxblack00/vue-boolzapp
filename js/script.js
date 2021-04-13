@@ -95,7 +95,7 @@ function initVue() {
     searchText: ''
 
     },
-    updated: {
+    updated() {
 
       var container = this.$el.querySelector('.messages-row');
       container.scrollTop = container.scrollHeight;
