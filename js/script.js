@@ -103,6 +103,12 @@ function initVue() {
     },
     methods: {
 
+      deleteMsg: function(msg) {
+
+        this.contacts['message'].splice(this.contacts['message'].indexOf(msg), 1);
+
+      },
+
       newMsg: function() {
         if (this.myMsg.length > 0) {
           var d = new Date();
