@@ -94,6 +94,12 @@ function initVue() {
     index: 0
 
     },
+    // updated: {
+    //
+    //   var container = this.$el.querySelector('.messages-row');
+    //   container.scrollTop = container.scrollHeight;
+    //
+    // },
     methods: {
 
       newMsg: function() {
@@ -112,6 +118,23 @@ function initVue() {
 
       slectUser: function(index) {
         this.activeIndex = index;
+      },
+
+      searchContact: function() {
+
+        const resContacts = [];
+
+        for(let i=0;i<this.contacts.length;i++) {
+
+          const contact = this.contacts[i];
+          const name = contact['name'];
+
+          if (name.toLowerCase().includes(this.searchText.toLowerCase())) {
+            resContacts.push(contact);
+          }
+
+        }
+        return resContacts;
       }
 
     }

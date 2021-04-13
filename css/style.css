@@ -73,6 +73,8 @@ ul {
   background-size: contain;
 
   float: right;
+
+  overflow: auto;
 }
 
 .spk{
