@@ -37,12 +37,24 @@ ul {
 
 .research {
   height: 40px;
+
+  background-color: #1c1c1c;
+  color: lightgrey;
+
+  padding: 5px;
+
+  text-align: center;
 }
 
 .searchbar-input {
-
   border-radius: 10px;
+  border: none;
 
+  background-color: #161616;
+  color: lightgrey;
+
+  height: 30px;
+  width: 90%;
 }
 
 .personal-info {
@@ -58,6 +70,7 @@ ul {
 
 .user{
   display: flex;
+  border-bottom: 1px solid lightslategray;
 
   padding: 10px 5px;
 
