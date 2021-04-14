@@ -21,7 +21,7 @@ ul {
 }
 
 .active {
-  background: lightgray;
+  background: #161616;
 }
 /* ZONA CONTATTI */
 .contacts-row {
@@ -30,7 +30,7 @@ ul {
 
   border-right: 1px solid black;
 
-  background-color: #ffece6;
+  background-color: #1c1c1c;
 
   float: left;
 }
@@ -55,6 +55,8 @@ ul {
 
   height: 30px;
   width: 90%;
+
+  text-align: center;
 }
 
 .personal-info {
@@ -70,21 +72,21 @@ ul {
 
 .user{
   display: flex;
-  border-bottom: 1px solid lightslategray;
 
   padding: 10px 5px;
 
   width: 20vw;
   height: 73px;
 
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightslategray;
+  border-bottom: 1px solid lightslategray;
 
   line-height: 30px;
+  color: white;
 }
 
 .user:hover {
-  background: lightgray;
+  background: #161616;
 }
 
 .user-logo {
@@ -97,7 +99,7 @@ ul {
 
 .user-name {
   line-height: 30px;
-  vertical-align: middle;
+  float: right;
 }
 /* ZONA MESSAGGI */
 .messages-row {
@@ -123,7 +125,7 @@ ul {
 
   max-width: 30vw;
 
-  border-radius: 10%;
+  border-radius: 30px;
   padding: 10px;
 
   background-color: white;
