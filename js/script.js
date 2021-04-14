@@ -92,7 +92,8 @@ function initVue() {
     myChat: [],
     activeIndex: 0,
     index: 0,
-    searchText: ''
+    searchText: '',
+    visibilty: ''
 
     },
     updated() {
@@ -122,13 +123,13 @@ function initVue() {
           this.contacts[this.activeIndex].messages.push(temp);
           this.myMsg = '';
 
-          this.autoMsg();
+          this.autoMsg(this.activeIndex);
         }
       },
 
-      autoMsg: function() {
+      autoMsg: function(index) {
 
-        const activeUser = this.activeIndex;
+        const thisIndex = index;
 
         let d = new Date();
         let time = d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear() + ' ' + d.getHours() + ':' + d.getMinutes();
@@ -140,7 +141,7 @@ function initVue() {
             text: 'ok',
             status: 'received'
           }
-          this.contacts[this.activeIndex].messages.push(newMsg);
+          this.contacts[thisIndex].messages.push(newMsg);
         }, 1000);
 
       },
@@ -165,6 +166,14 @@ function initVue() {
 
         }
         return resContacts;
+      },
+
+      dropMenu: function() {
+        if (visibilty == '') {
+          visibilty = 'vis'
+        } else {
+          visibilty = '';
+        }
       }
 
     }
