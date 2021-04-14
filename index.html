@@ -48,7 +48,7 @@
             <ul>
               <li v-for="(contact, index) in searchContact()" @click="slectUser(index)" :class="index == activeIndex ? 'active' : ''" class="user">
                 <img class="user-logo" v-bind:src="contact.avatar">
-                <span class="user-name">{{ contact.name }}</span>
+                <div class="row-nm"></div><span class="user-name">{{ contact.name }}</span><div class="row-nm due"></div>
               </li>
             </ul>
           </div>
@@ -64,7 +64,8 @@
 
         <ul>
           <li v-for="message in contacts[activeIndex].messages" :class="message.status == 'sent'? 'spk s-green' : 'spk'">
-           {{ message.text }}
+           <span>{{ message.text }}</span>
+           <span class="hour">{{ message.date }}</span>
            <div class="btn-group">
              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" @click=""></button>
              <div class="dropdown-menu" :class="visibilty">

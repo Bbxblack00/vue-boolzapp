@@ -35,6 +35,10 @@ ul {
   float: left;
 }
 
+.contacts-zone {
+  overflow: auto;
+}
+
 .research {
   height: 40px;
 
@@ -70,12 +74,17 @@ ul {
   border-radius: 100%;
 }
 
+.user-box {
+  overflow: auto;
+}
+
 .user{
   display: flex;
+  align-items: center;
 
   padding: 10px 5px;
 
-  width: 20vw;
+  width: 19.9vw;
   height: 73px;
 
   border-top: 1px solid lightslategray;
@@ -97,9 +106,14 @@ ul {
   border-radius: 100%;
 }
 
+.row-nm {
+  width: 20%;
+  height: 100%;
+}
+
 .user-name {
   line-height: 30px;
-  float: right;
+  font-size: 20px;
 }
 /* ZONA MESSAGGI */
 .messages-row {
@@ -132,6 +146,8 @@ ul {
 
   margin-bottom: 25px;
   margin-left: 12px;
+
+  position: relative;
 }
 
 .s-green {
@@ -141,6 +157,14 @@ ul {
 
   color: white;
   margin-right: 12px;
+}
+
+.hour {
+  font-size: 8px;
+
+  position: absolute;
+  bottom: 0;
+  right: 12px;
 }
 /* ZONA INPUT TESTUALE */
 .und-container {
